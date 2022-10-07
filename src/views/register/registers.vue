@@ -299,7 +299,7 @@ export default {
             ) {
               // window.location.href = res.result.android.url;
 
-              // window.location.href = res.result.downloadAndroidUrl;
+               window.location.href = res.result.downloadAndroidUrl;
             } else {
               this.$toast({ message: "当前无下载链接", position: "bottom" });
             }
@@ -307,7 +307,7 @@ export default {
 
           if (isIOS) {
             if (res.result.iOS.url != null && res.result.iOS.url != "") {
-              // window.location.href = res.result.iOS.url;
+               window.location.href = res.result.iOS.url;
               //  this.$router.push({path:"/register",query: { downurl: res.result.iOS.url}});
             } else {
               this.$toast({ message: "当前无下载链接", position: "bottom" });
